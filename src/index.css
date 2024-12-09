@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2c3e50;
+  --color-secondary: #34495e;
+  --color-accent-orange: #e67e22;
+  --color-accent-green: #27ae60;
+  --color-accent-yellow: #f1c40f;
+  --color-text: #2c3e50;
+  --color-text-light: #7f8c8d;
+  --color-background: #ecf0f1;
+  --color-light-blue: #e0f7fa; /* Light blue */
+  --color-light-orange: #f9e79f; /* Light orange */
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  @apply bg-[#2c3e50] hover:bg-[#34495e] text-white;
+}
+
+.btn-success {
+  @apply bg-[#27ae60] hover:bg-[#219a52] text-white;
+}
+
+.btn-warning {
+  @apply bg-[#f1c40f] hover:bg-[#f39c12] text-[#2c3e50];
+}
+
+.btn-danger {
+  @apply bg-[#e67e22] hover:bg-[#d35400] text-white;
+}
+
+.table-header {
+  @apply bg-[#34495e] text-white;
+}
+
+.input-primary {
+  @apply border-[#bdc3c7] focus:border-[#3498db] focus:ring-[#3498db];
+}
+
+.light-blue {
+  background-color: var(--color-light-blue);
+}
+
+.light-orange {
+  background-color: var(--color-light-orange);
+}
